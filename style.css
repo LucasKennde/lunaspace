@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#54B3E1;
+    --secondary-color:#ff914d;
+
+    --primari-text-color:#f9f9f9;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--primari-text-color);
+}
+
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+
+.logo{
+    img{
+        height: 100px;
+    }
+}
+.btn{
+    padding: 0.5rem 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primari-text-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: var(--primari-text-color);
+    color: var(--secondary-color);
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap:2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primari-text-color);
+        }
+
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    
+    .main{
+        display: flex;
+        width: 100%;
+        max-width: 1440px;
+        flex-direction: column;
+        
+        .p1{
+            height: 700px;
+        }
+        .p2{
+            height: 400px;
+            background-color: var(--primari-text-color);
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .conteudo{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        color: var(--primari-text-color);
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                    .buttons{
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* CLOUD FRAMES */
+.cloud{
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+    .c1{
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloud.png");
+        background-position: 0px;
+        background-repeat: repeat-x;
+        bottom: 0px;
+        position: absolute;
+        z-index: 1;
+        background-size: contain;
+        animation: animationCloud 60s infinite reverse;
+        animation-delay: -3s;
+    }
+    .c2{ 
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloud.png");
+        background-position: 200px;
+        background-repeat: repeat-x;
+        opacity: 0.3;
+        position: absolute ;
+        bottom: 0px;
+        z-index: 2;
+        background-size: contain;        
+        animation: animationCloud 60s infinite reverse;
+        animation-delay: -13s;
+    }
+    .c3{
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloud.png");
+        background-position: 100px;
+        background-repeat: repeat-x;
+        opacity: 0.5;
+        position: absolute ;
+        bottom: 0px;
+        z-index: 4;
+        background-size: contain;
+        animation: animationCloud 60s infinite reverse;
+        animation-delay: -7s;
+    }
+}
+
+.cloudBackstage{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--primari-text-color);
+
+        .container{
+            display: flex;
+            width: 100%;
+            max-width: 1440px;
+            height: 100%;
+            justify-content: space-between;
+
+            .conteudo{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                gap: 1rem;
+                padding: 2rem;
+                h1{
+                    font-size: 3rem;
+                    color: var(--secondary-color);
+                }
+            }
+
+            .luna{
+                background-image: url("../assets/luna2.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                min-height: 400px;
+            }
+
+            .luna3{
+                background-image: url("../assets/luna3.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                min-height: 400px;
+            }
+        }
+}
+
+.cloudReverse{
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+    .c1{
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloudReverse.png");
+        background-position: 0px;
+        background-repeat: repeat-x;
+        bottom: 0px;
+        position: absolute;
+        z-index: 1;
+        background-size: contain;
+        animation: animationCloud 60s infinite ease;
+    }
+    .c2{ 
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloudReverse.png");
+        background-position: 200px;
+        background-repeat: repeat-x;
+        opacity: 0.3;
+        position: absolute ;
+        bottom: 0px;
+        z-index: 2;
+        background-size: contain;
+        animation: animationCloud 60s infinite ease;
+        animation-delay: -3s;
+    }
+    .c3{
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/cloudReverse.png");
+        background-position: 100px;
+        background-repeat: repeat-x;
+        opacity: 0.5;
+        position: absolute ;
+        bottom: 0px;
+        z-index: 4;
+        background-size: contain;
+        animation: animationCloud 60s infinite ease;
+        animation-delay: -6s;
+    }
+}
+
+
+/* ROADMAP */
+.roadmap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    .container{
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+
+            h1{
+                font-size: 5rem;
+                font-weight: 800;
+                color: var(--primari-text-color);
+            }
+
+            .conteudo{
+                display: flex;
+                justify-content: space-between;
+                
+                .roadmap{
+                    width: 50%;
+                }
+                .roadmapLine{
+                    width: 4px;
+                    height: auto;
+                    background-color: #ff914d;
+                }
+                
+                .roadmapLeft{
+                    width: 100%;
+                    height: auto;
+                    margin-top: 300px;
+                    display: flex;
+                    justify-content: start;
+
+                    .content-roadmap{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: end;
+                        height: 100%;
+                        width: 70%;
+                        background-color: #f9f9f9;
+                        border-radius: 1rem;
+                        border: 6px solid #ff914d;
+                        padding: 2rem;
+                        gap: 2rem;
+                        color: #a8a8a8;
+                        h1{
+                            color: #ff914d;
+                            font-size: 1.4rem;
+                        }
+                    }
+                       
+                }
+                .roadmapRight{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 300px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .content-roadmap{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: start;
+                        height: 100%;
+                        width: 70%;
+                        background-color: #f9f9f9;
+                        border-radius: 1rem;
+                        border: 6px solid #ff914d;
+                        padding: 2rem;
+                        gap: 2rem;
+                        color: #a8a8a8;
+                        h1{
+                            color: #ff914d;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+            }
+    }
+}
+
+
+/* aplicando responsividade */
+@media (max-width:600px) {
+    header{
+        background-color: #ff914d;;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            display: none;
+        }
+        .button{
+            display: none;
+        }
+
+    }
+
+    
+        .btn{
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background-color: var(--secondary-color);
+            color: var(--primari-text-color);
+            cursor: pointer;
+            border: none;
+            border-radius: 0.5rem;
+            transition: 0.3s;
+        }
+    
+    main{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        
+        .main{
+            display: flex;
+            width: 100%;
+            max-width: 1440px;
+            flex-direction: column;
+            
+            .p1{
+                height: auto;
+            }
+            .p2{
+                height: auto;
+                background-color: var(--primari-text-color);
+            }
+            .container{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                .conteudo{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding: 1rem;
+                        img{
+                            width: 100%;
+                        }
+                        p{
+                            color: var(--primari-text-color);
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                        }
+                        .buttons{
+                            display: flex;
+                            justify-content: space-evenly;
+                        }
+                }
+                
+            }
+        }
+    }
+    
+
+    .cloud{
+        width: 100%;
+        height: 40px;
+        position: relative;
+        }
+    .cloudBackstage{
+      
+        flex-direction: column;
+
+    
+            .container{
+               
+                height: auto;
+    
+                .conteudo{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+             
+                    h1{
+                        text-align: center;
+                        font-size: 2rem;
+                        color: var(--secondary-color);
+                    }
+                }
+    
+                .luna{
+                    display: none;
+                     }
+                .conteudo.luna3{
+                    display: none;
+                }
+                .sociais{
+                    display: none;
+                }
+            }
+    }
+    .cloudReverse{
+        height: 40px;
+    }
+   
+    
+    .roadmap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        .container{
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            text-align: center;
+    
+                h1{
+                    font-size: 2em;
+                    font-weight: 800;
+                    color: var(--primari-text-color);
+                }
+    
+                .conteudo{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    .roadmap{
+                        width: 100%;
+                    }
+                    .roadmapLine{
+                        width: 4px;
+                        height: auto;
+                        background-color: #ff914d;
+                        display: none;
+                    }
+                    
+                    .roadmapLeft{
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        padding: 1rem;
+                        margin: 0;
+                        .content-roadmap{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 100%;
+                            width: 100%;
+                            background-color: #f9f9f9;
+                            border-radius: 1rem;
+                            border: 6px solid #ff914d;
+                            padding: 2rem;
+                            gap: 2rem;
+                            color: #a8a8a8;
+                            h1{
+                                color: #ff914d;
+                                font-size: 1.4rem;
+                            }
+                        }
+                           
+                    }
+                    .roadmapRight{
+                        width: 100%;
+                        height: auto;
+                        display: flex;    
+                        padding: 1rem;
+                        margin: 0;
+                        .content-roadmap{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 100%;
+                            width: 100%;
+                            background-color: #f9f9f9;
+                            border-radius: 1rem;
+                            border: 6px solid #ff914d;
+                            padding: 2rem;
+                            gap: 2rem;
+                            color: #a8a8a8;
+                            h1{
+                                color: #ff914d;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+    
+                }
+        }
+    }
+    
+    
+}
+   
+@media (max-width:1000px){
+    .btn{
+        font-size: 1rem;
+    }
+    .header{
+        padding: 0px 3rem;
+    }
+    .main{
+        padding: 0px 3rem;
+    }   
+    .cloudBackstage{
+        padding: 0px 3rem;
+    }
+    .roadmap{
+        .container{
+            padding: 0px 3rem;
+        }
+    }
+}
+
+@media (max-width:750px){
+    header{
+
+        .button{
+            display: none;
+        }
+
+    }
+    .btn{
+        font-size: 0.5rem;
+    }
+}
+/* KEYFRAMES */
+@keyframes animationCloud {
+    0%, 100%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+}
