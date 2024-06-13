@@ -10,12 +10,12 @@
     --primary-color:#54B3E1;
     --secondary-color:#ff914d;
 
-    --primaritext-color:#f9f9f9;
+    --primari-text-color:#f9f9f9;
     
 }
 a{
     text-decoration: none;
-    color: var(--primaritext-color);
+    color: var(--primari-text-color);
 }
 
 body{
@@ -36,14 +36,14 @@ body{
     font-size: 2rem;
     font-weight: 600;
     background-color: var(--secondary-color);
-    color: var(--primaritext-color);
+    color: var(--primari-text-color);
     cursor: pointer;
     border: none;
     border-radius: 0.5rem;
     transition: 0.3s;
 }
 .btn:hover{
-    background-color: var(--primaritext-color);
+    background-color: var(--primari-text-color);
     color: var(--secondary-color);
 }
 
@@ -67,7 +67,7 @@ header{
             gap:2rem;
             font-size: 1.5rem;
             font-weight: 600;
-            color: var(--primaritext-color);
+            color: var(--primari-text-color);
         }
 
 }
@@ -90,7 +90,7 @@ main{
         }
         .p2{
             height: 400px;
-            background-color: var(--primaritext-color);
+            background-color: var(--primari-text-color);
         }
         .container{
             width: 100%;
@@ -106,7 +106,7 @@ main{
                         width: 100%;
                     }
                     p{
-                        color: var(--primaritext-color);
+                        color: var(--primari-text-color);
                         font-size: 1.3rem;
                         font-weight: 600;
                     }
@@ -182,7 +182,7 @@ main{
     align-items: center;
     flex-direction: column;
     height: auto;
-    background-color: var(--primaritext-color);
+    background-color: var(--primari-text-color);
 
         .container{
             display: flex;
@@ -290,7 +290,7 @@ main{
             h1{
                 font-size: 5rem;
                 font-weight: 800;
-                color: var(--primaritext-color);
+                color: var(--primari-text-color);
             }
 
             .conteudo{
@@ -389,7 +389,7 @@ main{
             font-size: 0.8rem;
             font-weight: 600;
             background-color: var(--secondary-color);
-            color: var(--primaritext-color);
+            color: var(--primari-text-color);
             cursor: pointer;
             border: none;
             border-radius: 0.5rem;
@@ -414,7 +414,7 @@ main{
             }
             .p2{
                 height: auto;
-                background-color: var(--primaritext-color);
+                background-color: var(--primari-text-color);
             }
             .container{
                 width: 100%;
@@ -432,7 +432,7 @@ main{
                             width: 100%;
                         }
                         p{
-                            color: var(--primaritext-color);
+                            color: var(--primari-text-color);
                             font-size: 1.3rem;
                             font-weight: 600;
                         }
@@ -507,7 +507,7 @@ main{
                 h1{
                     font-size: 2em;
                     font-weight: 800;
-                    color: var(--primaritext-color);
+                    color: var(--primari-text-color);
                 }
     
                 .conteudo{
